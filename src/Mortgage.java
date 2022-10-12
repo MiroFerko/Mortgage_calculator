@@ -5,15 +5,16 @@ public class Mortgage {
         {
             Scanner scan = new Scanner(System.in);
             System.out.print("Enter Amount : ");
-            double principal = scan.nextDouble();
+            double amount = scan.nextDouble();
             System.out.print("Enter Rate of Interest : ");
             double rate = scan.nextDouble();
             rate = (rate / 100) / 12;
             System.out.print("Enter Time period in years : ");
             int time = scan.nextInt();
             time = time * 12;
-            double p = (principal * rate) / (1 - Math.pow(1 + rate, -time));
+            double p = (amount * rate) / (1 - Math.pow(1 + rate, -time));
             System.out.println("Payment: " + p);
+
         }
     }
 }
