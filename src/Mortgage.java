@@ -14,10 +14,6 @@ public class Mortgage {
             time = time * 12;
             double p = (amount * rate) / (1 - Math.pow(1 + rate, -time));
             System.out.println("Payment: " + p);
-
-
-
-
         }
     }
 }
