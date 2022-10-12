@@ -16,6 +16,7 @@ public class Mortgage {
             System.out.println("Payment: " + p);
 
 
+
         }
     }
 }
